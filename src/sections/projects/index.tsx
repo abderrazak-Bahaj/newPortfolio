@@ -1,6 +1,12 @@
 import React from "react";
-
-
+import {Card} from '@/components'
+const cardImageInfo =[ {
+  title : "Card Image",
+  image : "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+  link: "https://flowbite.com/",
+  linkText: "Read more",
+  details:"Go to this step by step guideline process on how to certify for your weekly benefits" 
+}]
 const Service:React.FC = () => {
   return (
     <section className="pb-12 dark:bg-gray-900">

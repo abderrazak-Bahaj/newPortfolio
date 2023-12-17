@@ -1,15 +1,12 @@
 import Image from 'next/image'
-// import { Navbar,Hero,Alert,Banner,Blockquote,Breadcrumb,Button,Card,Checkbox,ContactAction,Footer,Gallery,InputText,Link,Radio,Select,Services,Textarea,Timeline} from '@/components'
+import { Alert,Blockquote,Breadcrumb,Button,Card,Checkbox,InputText,Link,Radio,Select,Textarea,Timeline} from '@/components'
+import { Banner, ContactAction, Gallery } from '@/sections'
 
 export default function Cmp() {
   return (
     <div >
-      {/* <Navbar />
       <Button/>
-      <Hero/>
-      <Services/>
       <Breadcrumb/>
-      
       <Card/>
       <Checkbox/>
       <InputText/>
@@ -22,8 +19,6 @@ export default function Cmp() {
       <Banner/>
       <Blockquote/>
       <Gallery/>
-      <Timeline/>
-      <Footer/> */}
 
     </div>
   )

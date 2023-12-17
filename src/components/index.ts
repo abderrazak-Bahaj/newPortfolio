@@ -10,6 +10,7 @@ export { default as Link} from './link'
 export { default as Radio} from './radio'
 export { default as Select} from './select'
 export { default as Textarea} from './textarea'
+export { default as ServiceCard} from './serviceCard'
 
 
 

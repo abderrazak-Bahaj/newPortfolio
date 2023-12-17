@@ -1,2 +1,7 @@
 export { default as IconEduction } from './Eductions'
 export { default as IconExperience } from './Experience'
+export { default as IconHome } from './Home'
+export { default as IconSpeed } from './Speed'
+export { default as IconSynchronize } from './Synchronize'
+export { default as IconApps } from './Apps'
+export { default as IconNavigate } from './Navigate'
