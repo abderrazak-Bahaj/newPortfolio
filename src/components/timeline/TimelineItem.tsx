@@ -1,11 +1,11 @@
 import { TimelineItemProps } from '@/lib/interfaces/components'
 import React from 'react'
 
-const TimelineItem: React.FC<React.PropsWithChildren<TimelineItemProps>> = ({title, date, description,icon,children}) => {
+const TimelineItem: React.FC<TimelineItemProps> = ({title, date, description,icon}) => {
     return (
       <li className="mb-10 ms-6">
         <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-          {children}
+          {icon}
         </span>
         <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
           {title}

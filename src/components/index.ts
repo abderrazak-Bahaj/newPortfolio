@@ -12,6 +12,7 @@ export { default as Select} from './select'
 export { default as Textarea} from './textarea'
 export { default as ServiceCard} from './serviceCard'
 export { default as TestApp } from './copy'
+export { default as Popup } from './popup'
  
 
 

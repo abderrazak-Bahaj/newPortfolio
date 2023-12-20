@@ -47,15 +47,11 @@ const ExperienceAndEducation: React.FC = () => {
       <div className="flex flex-wrap mx-5 my-5" >
         <div className="w-full px-4 md:w-1/2">
           <h3 className="mb-[30px] text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-2xl md:text-[30px]">Experience</h3>
-          <Timeline  items={fakeDataExperience}  >
-            <IconExperience />
-          </Timeline>
+          <Timeline  items={fakeDataExperience}   icon={ <IconExperience />} />
         </div>
         <div className="w-full px-4 md:w-1/2">
           <h3 className="mb-[30px] text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-2xl md:text-[30px]">Education</h3>
-          <Timeline items={fakeDataEductions}>
-            <IconEduction />
-          </Timeline>
+          <Timeline items={fakeDataEductions} icon={<IconEduction />} />
         </div>
       </div>
     </section>
