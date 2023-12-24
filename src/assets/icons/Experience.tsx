@@ -3,7 +3,7 @@ import React from "react";
 const Experience = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 512.00 512.00">
-    <path fill="#000000" d="
+    <path fill="#ddd" d="
       M 143.84 115.80
       Q 143.90 102.93 143.82 90.33
       C 143.71 73.41 156.00 61.12 172.96 61.13

@@ -8,7 +8,7 @@ const Eductions: React.FC = () => {
       viewBox="0.00 0.00 666.00 670.00"
     >
       <path
-        fill="#000000"
+        fill="#ddd"
         d="
   M 362.63 344.63
   Q 357.97 346.17 353.61 347.57
@@ -56,7 +56,7 @@ const Eductions: React.FC = () => {
   Z"
       />
       <path
-        fill="#000000"
+        fill="#ddd"
         d="
   M 537.82 372.59
   Q 544.49 384.40 549.56 398.61
@@ -80,7 +80,7 @@ const Eductions: React.FC = () => {
   Z"
       />
       <path
-        fill="#000000"
+        fill="#ddd"
         d="
   M 268.34 463.12
   Q 250.64 458.97 235.39 453.04

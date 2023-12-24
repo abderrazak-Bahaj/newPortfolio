@@ -42,7 +42,7 @@ const Service: React.FC = () => {
   ];
 
   return (
-    <section className="pb-12 dark:bg-gray-900">
+    <section className="py-8 dark:bg-gray-900">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">

@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({
           height={"350"}
           width={"350"}
           src={image}
-          className=" text-gray-500 dark:text-gray-400 mb-3 w-full max-h-72 "
+          className=" text-gray-500 dark:text-gray-400 mb-3 rounded-lg w-full max-h-72 "
         />
       )}
       <h2 className="mb-2 px-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">

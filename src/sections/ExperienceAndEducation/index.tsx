@@ -35,7 +35,7 @@ const ExperienceAndEducation: React.FC = () => {
     }
   ]
   return (
-    <section>
+    <section className="py-8 ">
       <div className="w-full px-4  my-5 pt-5">
             <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
               <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
