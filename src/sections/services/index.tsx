@@ -6,7 +6,7 @@ const Service: React.FC = () => {
   const services = [
     {
       id: 1,
-      title: "Refreshing Design",
+      title: "Creative Idea",
       details:
         "We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics.",
       icon: <IconApps />,
@@ -24,21 +24,7 @@ const Service: React.FC = () => {
       details:
         "We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics.",
       icon: <IconSpeed />,
-    },
-    {
-      id: 4,
-      title: "Creative Idea",
-      details:
-        "We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics.",
-      icon: <IconSynchronize />,
-    },
-    {
-      id: 5,
-      title: "24/7 Support",
-      details:
-        "We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics.",
-      icon: <IconSynchronize />,
-    },
+    }
   ];
 
   return (
