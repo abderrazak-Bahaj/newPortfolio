@@ -10,7 +10,7 @@ const BlogApp: React.FC = () => {
       date: "Jan 4 2022",
       link: "/blog/test-slug",
       creator: "Sarah Doe",
-      category: "Development",
+      tags: ["Development", "Frontend", "Design", "Photography"],
     },
     {
       title: "A Quick Guide to WordPress Hosting",
@@ -19,7 +19,7 @@ const BlogApp: React.FC = () => {
       date: "Jan 4 2022",
       link: "/blog/test-slug",
       creator: "John Doe",
-      category: "Development",
+      tags:[ "Development", "Frontend" ],
     },
     {
       title: "7 Promising VS Code Extensions Introduced in 2022",
@@ -28,7 +28,7 @@ const BlogApp: React.FC = () => {
       date: "Jan 4 2022",
       link: "/blog/test-slug",
       creator: "Sarah Doe",
-      category: "Frontend",
+      tags:[ "Frontend", "Development" ],
     },
     {
       title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
@@ -37,7 +37,7 @@ const BlogApp: React.FC = () => {
       date: "Jan 4 2022",
       link: "/blog/test-slug",
       creator: "John Doe",
-      category: "Frontend",
+      tags: ["Frontend", "Development","CSS", "JS"],
     },
     {
       title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
@@ -46,7 +46,7 @@ const BlogApp: React.FC = () => {
       date: "Jan 4 2022",
       link: "/blog/test-slug",
       creator: "Sarah Doe",
-      category: "Backend",
+      tags: ["Backend"],
     },
     {
       title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
@@ -55,7 +55,7 @@ const BlogApp: React.FC = () => {
       date: "Jan 4 2022",
       link: "/blog/test-slug",
       creator: "John Doe",
-      category: "Backend",
+      tags: ["Backend"],
     },
     {
       title: "The Impact of AI in Healthcare: Revolutionizing Patient Care",
@@ -64,7 +64,7 @@ const BlogApp: React.FC = () => {
       date: "Jan 5 2022",
       link: "/blog/test-slug",
       creator: "Emma Smith",
-      category: "Healthcare",
+      tags: ["Healthcare", "AI"],
     },
     {
       title: "Mastering Data Science: Essential Tools and Techniques",
@@ -73,7 +73,7 @@ const BlogApp: React.FC = () => {
       date: "Jan 6 2022",
       link: "/blog/test-slug",
       creator: "Michael Johnson",
-      category: "Data Science",
+      tags: ["Data Science", "Machine Learning"],
     },
     {
       title: "The Future of Work: Embracing Remote Collaboration Tools",
@@ -82,7 +82,7 @@ const BlogApp: React.FC = () => {
       date: "Jan 7 2022",
       link: "/blog/test-slug",
       creator: "Olivia Garcia",
-      category: "Collaboration",
+      tags: ["Collaboration", "Remote Work"],
     },
     {
       title: "Exploring the Blockchain: Technology Beyond Cryptocurrency",
@@ -91,7 +91,7 @@ const BlogApp: React.FC = () => {
       date: "Jan 8 2022",
       link: "/blog/test-slug",
       creator: "Daniel Brown",
-      category: "Blockchain",
+      tags: ["Blockchain", "Technology"],
     },
     {
       title: "The Power of UX Design: Creating Seamless User Experiences",
@@ -100,7 +100,7 @@ const BlogApp: React.FC = () => {
       date: "Jan 9 2022",
       link: "/blog/test-slug",
       creator: "Sophia Lee",
-      category: "UX Design",
+      tags: ["UX Design", "User Experience"],
     },
     {
       title: "Cybersecurity Essentials: Safeguarding Against Online Threats",
@@ -109,33 +109,37 @@ const BlogApp: React.FC = () => {
       date: "Jan 10 2022",
       link: "/blog/test-slug",
       creator: "William Clark",
-      category: "Cybersecurity",
+      tags:[ "Cybersecurity", "Threats"],
     },
   ];
 
   return (
     <section className="w-full px-4 py-24 mx-auto max-w-7xl md:w-4/5">
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
       <h1 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
         Blogs
       </h1>
        <Card 
           {...posts[0]}
-          className="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-3 w-full max-w-none bg-transparent dark:border-none dark:bg-transparent"         
-          type="link"
+          className="w-full bg-transparent dark:border-none dark:bg-transparent  pb-0 md:pb-0 lg:pb-0"         
+          htmlTag="link"
+          theme="secondary"
           />
-        {posts.slice(1).map((post) => {
-          return (
-            <Card
-              linkText="Read More"
-              {...post}
-              key={post.title}
-              type="link"
-              className="bg-transparent dark:bg-inherit dark:border-gray-700"
-            />
-          );
-        })}
-      </div>
+        <h2 className="capitalize mb-6 text-2xl font-bold leading-[1.2] text-dark dark:text-white sm:text-3xl md:text-[30px]">
+          more blogs
+        </h2>
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+          {posts.slice(1).map((post) => {
+            return (
+              <Card
+                {...post}
+                key={post.title}
+                htmlTag="link"
+                className="bg-transparent dark:bg-inherit dark:border-gray-700  hover:shadow-gray-800 border border-gray-200"
+                theme="secondary"
+              />
+            );
+          })}
+        </div>
     </section>
   );
 };

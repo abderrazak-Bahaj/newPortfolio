@@ -1,15 +1,15 @@
 import Image from 'next/image'
-import { Alert,Blockquote,Breadcrumb,Button,Card,Checkbox,InputText,Link,Radio,Select,Textarea,Timeline} from '@/components'
+import { Alert,Blockquote,Breadcrumb,ButtonInput,Card,Checkbox,TextInput,Link,Radio,Select,Textarea,Timeline} from '@/components'
 import { Banner, ContactAction, Gallery } from '@/sections'
 
 export default function Cmp() {
   return (
     <div >
-      <Button/>
+      <ButtonInput/>
       <Breadcrumb/>
       <Card/>
       <Checkbox/>
-      <InputText/>
+      <TextInput/>
       <Link/>
       <Radio/>
       <Select/>
