@@ -1,9 +1,11 @@
+import { Contact } from "@/sections"
 
 
 const BlogApp:React.FC = () => {
     return (
        <>
-       contact</>
+       <Contact/>
+       </>
     )
 }
 

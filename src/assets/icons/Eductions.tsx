@@ -1,8 +1,10 @@
 import React from "react";
+import {PropsIcon} from "@/lib/interfaces/components";
 
-const Eductions: React.FC = () => {
+const Eductions: React.FC<PropsIcon> = ({...props}) => {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
       viewBox="0.00 0.00 666.00 670.00"

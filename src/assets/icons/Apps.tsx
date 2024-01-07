@@ -1,8 +1,10 @@
 import React from "react";
+import {PropsIcon} from "@/lib/interfaces/components";
 
-const Apps: React.FC = () => {
+const Apps: React.FC<PropsIcon> = ({...props}) => {
   return (
     <svg
+      {...props}
       width="36"
       height="36"
       viewBox="0 0 36 36"
